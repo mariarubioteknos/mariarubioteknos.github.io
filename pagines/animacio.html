@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+ <title>Portafoli </title>
+ <link rel="stylesheet" href="../css/normalize.css">
+ <link rel="stylesheet" href="../css/style.css">
+<meta name=”viewport” content=”width=device-width, minimum-scale=1.0, maximum-scale=1.0” />
+
+<!--GOOGLE FONTS-->    
+<link href="https://fonts.googleapis.com/css?family=Yantramanav&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Enriqueta&display=swap" rel="stylesheet">
+    
+    <!--Animacions-->
+<link rel="stylesheet" href="css/animations.css">
+  <title>Animació</title>
+    
+ 
+</head>
+<body>
+        <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label for="abrir-cerrar">&#9776; <span class="abrir"></span><span class="cerrar"></span></label>
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+           
+            <li><a href="../index.html">Qui soc</a></li>
+            <li><a href="#">Modelatge</a></li>
+            <li><a href="#">Ilustració</a></li>
+            <li><a href="#">Programació</a></li>
+            
+        </ul>
+    </div>
+    <div class="container2">
+   
+    <div class = "container-flex">
+     
+      <h1 class="nom"> Animació </h1>
+        
+           <div class="container-display">
+             <video class="mySlides" controls width="720" height="420" > 
+                 <source src="../videos/wallesi.mp4"> </video>
+               <video class="mySlides" controls width="720" height="420" > 
+                 <source src="../videos/Mi%20video.mp4"></video>
+               <video class="mySlides" controls width="720" height="420" > 
+                 <source src="../videos/Walkingcity.mp4"></video>
+               <video class="mySlides" controls width="720" height="420" > 
+                 <source src="../videos/walkingcityfront.mp4"></video>
+               <img class="mySlides" src="../videos/Mans/Ma%20Lliure.PNG" style="width:100%">
+               <img class="mySlides" src="../videos/Mans/Macigarretasi.PNG" style="width:100%">
+               <img class="mySlides" src="../videos/Mans//maEnfad.PNG" style="width:100%">
+
+            <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+          
+    </div>    
+     
+        </div>
+    </div>
+         
+         
+
+</body>
+</html>

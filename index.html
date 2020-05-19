@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <title>Portafoli </title>
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/style.css">
+<meta name=”viewport” content=”width=device-width, minimum-scale=1.0, maximum-scale=1.0” />
+
+<!--GOOGLE FONTS-->    
+<link href="https://fonts.googleapis.com/css?family=Yantramanav&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Enriqueta&display=swap" rel="stylesheet">
+    
+    <!--Animacions-->
+<link rel="stylesheet" href="css/animations.css">
+    </head>
+<body>
+     <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label for="abrir-cerrar">&#9776; <span class="abrir"></span><span class="cerrar"></span></label>
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+           
+            <li><a href="/pagines/animacio.html">Animacio</a></li>
+            <li><a href="/pagines/modelatge.html">Modelatge</a></li>
+            <li><a href="/pagines/ilustracio.html">Ilustració</a></li>
+            <li><a href="/pagines/programacio.html">Programació</a></li>
+            
+        </ul>
+    </div>
+
+<div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+ <div class="container2">
+   
+    <div class = "container-flex">
+     <!--Capçalera -->
+      
+     
+     <header class="flex-1">
+     
+<h1 class="nom"> Benvinguts al meu portafoli</h1>  
+     
+ 
+  </header>
+     </div>
+     <nav class="container-flex">
+         <button  class="flex-2 boto btn" onclick="location.href='#qui'" type= "button">Qui soc </button>
+       
+         <button class="flex-2 boto" onclick="location.href='#demo'" type= "button">Demoreel </button>
+         
+         <button class="flex-2 boto" onclick="location.href='#contacte'" type= "button">Contacte </button>
+         
+         </nav>
+     
+     
+     <div>
+        <section class="soc">
+         
+    <!--QUI SOC-->
+     
+     <h2 class="quisoc"> Qui sóc ? </h2>
+    
+     <hr>
+      <p class="socjo"> Hola em presento, sóc la <b>Maria Rubio  </b> una alumna de primer curs de grau superior d'Animacions en 3D, Jocs i Entorns Interactius amb moltes ganes d'apendre i evolucionar .El meu centre educatiu és Teknos a Vic. Des de petita m'apassionava el món del 3D, les animacions, l'edició d'imatge i els videojocs i ara tinc l'oportunitat de viure com és des de dintre.</p>
+      </section>
+     <section>
+
+        
+         <h2 id="demo"> Demo Reel</h2>
+            
+     <hr>
+         <p> En el meu demoreel podeu veure alguness de les feine que he creat entre 2020 i 2019. </p>
+          <div class="feina">
+     
+    <video controls width="720" height="420" class="size"> 
+    <source src="videos/DemoreelMaria.mp4"> 
+    <source src="videos/DemoreelMaria.webm"> 
+    <source src="videos/DemoreelMaria.ogg">
+        </video>
+         </div>
+    </section>   
+     <section>
+     <h2> Eines</h2>
+     <div>
+     <hr>
+     <p> logotips</p>
+     </div>
+     <img class="icons" src="imatges/L1.svg" alt="Lightroom" title="Lightroom">
+    <img class="icons" src = "imatges/photoshop.svg" alt="Photoshop" title="Photoshop">
+    <img class="icons" src="imatges/unity1.svg" alt=unity title="unity">
+    <img class="icons" src="imatges/Maya.svg" alt=Maya title="AtodeskMaya">
+    <img class="icons" src="imatges/css.svg" alt=unity title="unity">
+    <img class="icons" src="imatges/html.svg" alt=Html5 title="HTML5">
+     
+     </section>
+     
+     <h2 id="contacte"> Dades de contacte </h2>
+     <p> Per qualsavol dubte enviam un mail a rubiomaria@gmail.com </p>
+        
+</div>
+    
+     
+
+   <footer id="footer">
+        <div> Correu electronic rubiomariarm7@gmail.com</div>
+    </footer>
+</body>
+    <script>
+	$(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
+    <script>
+	$('#animatedElement').click(function() {
+		$(this).addClass("slideUp");
+	});
+</script>
+</html>
