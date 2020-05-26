@@ -23,22 +23,60 @@
     <div id="sidebar" class="sidebar">
         <ul class="menu">
            
-            <li><a href="../index.html">Qui soc</a></li>
-            <li><a href="#">Modelatge</a></li>
-            <li><a href="#">Ilustració</a></li>
-            <li><a href="#">Programació</a></li>
+            <li><a href="../index.html">Qui sóc</a></li>
+            <li><a href="../pagines/modelatge.html">Modelatge</a></li>
+            <li><a href="../pagines/ilustracio.html">Il·lustració</a></li>
+            <li><a href="../pagines/photosop.html">Edició d'imatge i textures 2D</a></li>
             
         </ul>
     </div>
-    <div class="container2">
+     <div class="container2">
    
     <div class = "container-flex">
      
-      <h1 class="nom"> Animació </h1>
-     
+      <h1 class="nom"> Programació </h1>
+        
+           <div class="container-display">
+             <video class="mySlides" controls width="99%" > 
+                 <source src="../videos/programcio/joc%202020-03-24%2014-21-18.mp4"> </video>
+               
+               <video class="mySlides" controls width="100%" > 
+                 <source src="../videos/programcio/nau%202020-03-24%2014-19-14.mp4"> </video>
+               
+
+            <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
         </div>
+
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+          
+    </div>    
+     
+        
     </div>
-         
          
 
 </body>

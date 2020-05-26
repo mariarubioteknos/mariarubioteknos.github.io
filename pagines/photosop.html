@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+ <title>Portafoli </title>
+ <link rel="stylesheet" href="../css/normalize.css">
+ <link rel="stylesheet" href="../css/style.css">
+<meta name=”viewport” content=”width=device-width, minimum-scale=1.0, maximum-scale=1.0” />
+
+<!--GOOGLE FONTS-->    
+<link href="https://fonts.googleapis.com/css?family=Yantramanav&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Enriqueta&display=swap" rel="stylesheet">
+    
+    <!--Animacions-->
+<link rel="stylesheet" href="css/animations.css">
+  <title>Animació</title>
+    
+ 
+</head>
+<body>
+        <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label for="abrir-cerrar">&#9776; <span class="abrir"></span><span class="cerrar"></span></label>
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+           
+            <li><a href="../index.html">Qui sóc</a></li>
+            <li><a href="../pagines/modelatge.html">Modelatge</a></li>
+            <li><a href="../pagines/ilustracio.html">il·lustració</a></li>
+           
+            <li><a href="../pagines/programacio.html">Programació</a></li>
+            
+        </ul>
+    </div>
+    <div class="container2">
+   
+    <div class = "container-flex">
+     
+      <h1 class="nom"> Edició d'imatge i textures 2D </h1>
+        
+        <div class="container-display">
+            
+            <img class="mySlides" src="../imatges/photoshop/radioentrega.jpg" style="width:100%">
+            <img class="mySlides" src="../imatges/photoshop/edit.jpg" style="width:100%">
+            <img class="mySlides" src="../imatges/photoshop/textures.jpg" style="width:100%">
+            
+             
+ 
+          
+
+            <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+         
+
+</body>
+</html>

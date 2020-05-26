@@ -23,34 +23,63 @@
     <div id="sidebar" class="sidebar">
         <ul class="menu">
            
-            <li><a href="../index.html">Qui soc</a></li>
-            <li><a href="../pagines/modelatge.html">Modelatge</a></li>
-            <li><a href="../pagines/ilustracio.html">Ilustració</a></li>
+            <li><a href="../index.html">Qui sóc</a></li>
+            <li><a href="../pagines/animacio.html">Animació</a></li>
+            <li><a href="../pagines/ilustracio.html">Il·lustració</a></li>
+             <li><a href="../pagines/photosop.html">Edició d'imatge i textures 2D</a></li>
             <li><a href="../pagines/programacio.html">Programació</a></li>
             
         </ul>
-   <div class="container2">
+</div>
+    <div class="container2">
    
     <div class = "container-flex">
      
-      <h1 class="nom"> Animació </h1>
+      <h1 class="nom"> Modelatge </h1>
         
            <div class="container-display">
-             <video class="mySlides" controls width="100%"  > 
-                 <source src="../videos/"> </video>
-               <video class="mySlides" controls width="100%"  > 
-                 <source src="../videos/Mi%20video.mp4"></video>
-               <video class="mySlides" controls width="100%"  > 
-                 <source src="../videos/Walkingcity.mp4"></video>
-               <video class="mySlides" controls width="100%"  > 
-                 <source src="../videos/walkingcityfront.mp4"></video>
-               <img class="mySlides" src="../videos/Mans/Ma%20Lliure.PNG" style="width:100%">
-               <img class="mySlides" src="../videos/Mans/Macigarretasi.PNG" style="width:100%">
-               <img class="mySlides" src="../videos/Mans//maEnfad.PNG" style="width:100%">
+             <video class="mySlides" controls width="100%" > 
+                 <source src="../videos/modelatge/Pistola.mp4"> </video>
+               <img class="mySlides" src="../imatges/modelat/debant.jpeg" style="width:100%">
+               <img class="mySlides" src="../imatges/modelat/de%20sota1.jpeg" style="width:100%">
+               <img class="mySlides" src="../imatges/modelat/adalt.jpeg" style="width:100%">
+               <img class="mySlides" src="../imatges/modelat/lateral.jpeg" style="width:100%">
+               
 
             <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
             <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
         </div>
+
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+          
+    </div>    
+     
+        
+    </div>
+         
          
 
 </body>
