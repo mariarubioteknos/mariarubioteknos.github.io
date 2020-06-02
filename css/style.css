@@ -110,8 +110,9 @@ input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
     background-color;
     overflow-x: hidden;
     transition: 0.4s;
-    padding: 1rem 0;
+    padding: rem 0;
     box-sizing:border-box;
+    
 }
 
 .sidebar .boton-cerrar {
@@ -229,9 +230,9 @@ background-color: white;
 }
 .feina{
     width: 80%;
-        height: 100vh;
+        height: 70vh;
         display: flex;
-        margin: auto;
+        margin: 10px;
         align-items: center;
         
 }
