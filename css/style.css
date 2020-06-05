@@ -228,17 +228,19 @@ background-color: white;
     
     
 }
+
+/* He corregit l'apartat feina pq no ocupi tant en fer-se petit i corregit el mediaquery a 600px*/
 .feina{
-    width: 80%;
-        height: 70vh;
+    width: 90%;
+        
         display: flex;
-        margin: 10px;
+        margin: 24px;
         align-items: center;
     margin-left: auto;
     margin-right: auto;
         
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .feina{
         width: 100%;
     }
@@ -335,8 +337,8 @@ background-color: white;
     top: 50%;
     left: 0%;
     transform: translate(0%, -50%);
-    
-    */
+    color: lightgray;
+      font-size:1em;
 }
 .inline{
     display:inline-block;
@@ -346,6 +348,9 @@ background-color: white;
     top: 50%;
     right: 0%;
     transform: translate(0%, -50%);
+        color: lightgray;
+    font-size:1em;
+/* No es veia la fletxa amb fons fosc, la faig una mica més gran*/
      
 }
 
